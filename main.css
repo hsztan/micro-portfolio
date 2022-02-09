@@ -44,13 +44,13 @@ nav .center {
 }
 
 nav ul {
-  min-width: 325px;
   flex: 15 15 15%;
   text-align: center;
   font-size: 15px;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav ul li {
@@ -60,4 +60,8 @@ nav ul li {
 
 nav .end {
   flex: 10 10 10%;
+}
+
+nav ul .email-icon {
+  width: 30%;
 }
