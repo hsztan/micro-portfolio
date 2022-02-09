@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap');
 
 * {
   padding: 0;
@@ -39,6 +39,10 @@ nav .name {
   flex-wrap: nowrap;
 }
 
+nav .name a {
+  display: none;
+}
+
 nav .center {
   flex: 45 45 45%;
 }
@@ -64,4 +68,32 @@ nav .end {
 
 nav ul .email-icon {
   width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul > *,
+  nav .start,
+  nav .ul,
+  nav .center,
+  nav.end {
+    display: none;
+    flex-basis: 0;
+    min-width: 0;
+  }
+
+  nav .name {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1rem;
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav .name img {
+    width: 60%;
+  }
+
+  nav .name a {
+    display: block;
+  }
 }
