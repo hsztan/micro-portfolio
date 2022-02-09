@@ -1,5 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+a,
+ul {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+nav {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  height: 72px;
+  width: 100vw;
+  background: #3e3c3c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+nav .start {
+  flex: 10 10 10%;
+}
+
+nav .name {
+  min-width: 216px;
+  flex: 10 10 10%;
+  flex-wrap: nowrap;
+}
+
+nav .name a {
+  display: none;
+}
+
+nav .center {
+  flex: 45 45 45%;
+}
+
+nav ul {
+  flex: 15 15 15%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  flex: 1;
+  min-width: 81px;
+}
+
+nav .end {
+  flex: 10 10 10%;
+}
+
+nav ul .email-icon {
+  width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul > *,
+  nav .start,
+  nav .ul,
+  nav .center,
+  nav.end {
+    display: none;
+    flex-basis: 0;
+    min-width: 0;
+  }
+
+  nav .name {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1rem;
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav .name img {
+    width: 60%;
+  }
+
+  nav .name a {
+    display: block;
+  }
 }
