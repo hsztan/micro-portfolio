@@ -10,8 +10,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-a {
+a,
+ul {
   text-decoration: none;
+  list-style: none;
   color: inherit;
 }
 
@@ -24,11 +26,38 @@ nav {
   background: #3e3c3c;
   color: #fff;
   display: flex;
+  align-items: center;
+}
+
+nav .start {
+  flex: 10 10 10%;
+}
+
+nav .name {
+  min-width: 216px;
+  flex: 10 10 10%;
+  flex-wrap: nowrap;
+}
+
+nav .center {
+  flex: 45 45 45%;
 }
 
 nav ul {
+  min-width: 325px;
+  flex: 15 15 15%;
   text-align: center;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: bold;
   display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  flex: 1;
+  min-width: 81px;
+}
+
+nav .end {
+  flex: 10 10 10%;
 }
