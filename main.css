@@ -105,7 +105,7 @@ nav ul .email-icon {
 .headline {
   display: flex;
   width: 100vw;
-  height: 870px;
+  height: 798px;
   align-items: center;
   background-color: #1c1a19;
   background-image: url(./assets/images/Illustration-header.png);
@@ -116,11 +116,11 @@ nav ul .email-icon {
 
 .headline .social {
   order: 1;
+  margin-left: 35px;
 }
 
 .headline .social ul {
   height: 180px;
-  margin-left: 36px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -175,7 +175,7 @@ nav ul .email-icon {
 
   .headline .content {
     margin: 0 auto;
-    width: 328px;
+    max-width: 328px;
   }
 
   .headline .content h1 {
@@ -201,9 +201,8 @@ nav ul .email-icon {
   }
 
   .headline .social {
-    margin: 0 auto;
+    margin-left: 15px;
     align-self: flex-start;
-    width: 420px;
     height: 20px;
     order: 2;
   }
