@@ -41,7 +41,7 @@ nav .name {
   flex-wrap: nowrap;
 }
 
-nav .name a {
+nav .name .sandwich {
   display: none;
 }
 
@@ -79,8 +79,6 @@ nav ul .email-icon {
   nav .center,
   nav.end {
     display: none;
-    flex-basis: 0;
-    min-width: 0;
   }
 
   nav .name {
@@ -95,7 +93,7 @@ nav ul .email-icon {
     width: 60%;
   }
 
-  nav .name a {
+  nav .name .sandwich {
     display: block;
   }
 }
