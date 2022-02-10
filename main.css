@@ -201,9 +201,9 @@ nav ul .email-icon {
   }
 
   .headline .social {
-    margin-left: 10px;
+    margin: 0 auto;
     align-self: flex-start;
-    width: 175px;
+    width: 420px;
     height: 20px;
     order: 2;
   }
@@ -213,8 +213,11 @@ nav ul .email-icon {
   }
 
   .headline .social ul {
-    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .headline .social ul li {
+    padding-left: 1.3rem;
   }
 }
