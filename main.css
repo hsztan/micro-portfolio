@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300;400;500;600;700&family=Poppins&family=Roboto:wght@700&display=swap');
 
 * {
   padding: 0;
@@ -114,6 +114,10 @@ nav ul .email-icon {
   background-size: contain;
 }
 
+.headline .social {
+  order: 1;
+}
+
 .headline .social ul {
   height: 180px;
   margin-left: 36px;
@@ -123,6 +127,7 @@ nav ul .email-icon {
 }
 
 .headline .content {
+  order: 1;
   width: 566px;
   margin-left: 87px;
 }
@@ -149,6 +154,67 @@ nav ul .email-icon {
 }
 
 .headline .background {
+  order: 1;
   height: 100%;
   min-width: 530px;
+}
+
+@media only screen and (max-width: 600px) {
+  .headline {
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('./assets/images/illustration-header-mobile.png');
+    background-position: bottom 0 right 0;
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+
+  .headline .background {
+    display: none;
+  }
+
+  .headline .content {
+    margin: 0 auto;
+    width: 328px;
+  }
+
+  .headline .content h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .headline .content h2 {
+    margin-top: 12px;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .headline .content p {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .headline .social {
+    margin-left: 10px;
+    align-self: flex-start;
+    width: 175px;
+    height: 20px;
+    order: 2;
+  }
+
+  .headline .social img {
+    display: inline-block;
+  }
+
+  .headline .social ul {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
