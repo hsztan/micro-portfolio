@@ -218,3 +218,84 @@ nav ul .email-icon {
     padding-left: 1.3rem;
   }
 }
+
+/* Styling for works section */
+
+.works {
+  margin: 10% 10%;
+}
+
+.works .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works .title h2 {
+  font-family: Crete Round, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  min-width: 350px;
+}
+
+.works .title .separator {
+  flex: 1 1 790px;
+  height: 0;
+  border: 1px solid #212121;
+}
+
+.works .featured {
+  color: #091e42;
+  margin-top: 114px;
+  display: flex;
+  gap: 24px;
+}
+
+.works .featured .image {
+  width: 684px;
+}
+
+.works .featured h3 {
+  font-family: Crete Round, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+}
+.works .featured p {
+  margin-top: 24px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.works .featured .tags a {
+  display: inline-block;
+  margin-top: 24px;
+  margin-right: 12px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+}
+
+.works .featured button {
+  margin-top: 24px;
+  padding: 12px;
+  color: #fff;
+  background-color: #f55800;
+  border: none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
