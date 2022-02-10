@@ -265,6 +265,7 @@ nav ul .email-icon {
   font-size: 40px;
   line-height: 52px;
 }
+
 .works .featured p {
   margin-top: 24px;
   font-family: Inter, Arial, Helvetica, sans-serif;
@@ -298,4 +299,57 @@ nav ul .email-icon {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+}
+
+.cards-wrapper {
+  margin-top: 37px;
+}
+
+.cards-wrapper .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 369px;
+  height: 435px;
+  padding: 16px 16px;
+  color: #fff;
+  background: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 84.18%
+    ),
+    url('./assets/images/card-placeholder.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cards-wrapper .card h4 {
+  font-family: Crete Round, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.cards-wrapper .card p {
+  margin-top: 24px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.cards-wrapper .tags a {
+  display: inline-block;
+  margin-top: 24px;
+  margin-right: 12px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid #8993a4;
 }
