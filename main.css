@@ -631,3 +631,49 @@ nav ul .email-icon {
   font-size: 22px;
   line-height: 43px;
 }
+
+/* About Me mobile styles */
+
+@media only screen and (max-width: 600px) {
+  .about-me {
+    padding-top: 120px;
+    background-image: url('./assets/images/about-me-back-mobile.png');
+    /* TODO */
+    background-position: top 390px right 0;
+  }
+
+  .about-me .about-wrapper {
+    width: 327px;
+    margin: 0 10%;
+  }
+
+  .about-me .about-wrapper .about-content h2 {
+    color: #ff6b00;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 88px;
+  }
+  
+  .about-me .about-wrapper .about-content p {
+    margin-top: 24px;
+    color: #f4f5f7;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .about-me .about-wrapper .about-content button {
+    margin-top: 24px;
+    padding: 12px;
+    color: #fff;
+    background-color: #ff6b00;
+  }
+  
+
+  .about-me .about-wrapper .separator {
+    margin-top: 209px;
+    min-width: 327px;
+    border: 1px solid #fff;
+    content: "";
+  }
+}
