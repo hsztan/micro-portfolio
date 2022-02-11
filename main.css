@@ -527,10 +527,13 @@ nav ul .email-icon {
 /* About Me styles */
 
 .about-me {
-  margin-top: 130px;
+  padding-top: 130px;
   width: 100vw;
   color: #fff;
   background-color: #262626;
+  background-image: url('./assets/images/about-me-back.png');
+  background-repeat: no-repeat;
+  background-position: top 100px right 0;
 }
 
 .about-me .about-wrapper {
@@ -543,7 +546,6 @@ nav ul .email-icon {
 }
 
 .about-me .about-wrapper .about-content h2 {
-  margin-top: 130px;
   color: #f55800;
   font-family: Crete Round, Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -590,6 +592,13 @@ nav ul .email-icon {
   display: grid;
   grid-gap: 176px;
   grid-template-columns: repeat(3, 235px);
+  padding-bottom: 142px;
+}
+
+.about-me .about-wrapper .skills .skill .skill-title {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
 .about-me .about-wrapper .skills .skill h4 {
@@ -598,6 +607,20 @@ nav ul .email-icon {
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
+}
+
+.about-me .about-wrapper .skills .skill .icon-figure {
+  background-color: #f55800;
+  width: 18px;
+  height: 18px;
+}
+
+.about-me .about-wrapper .skills .skill .icon-diamond {
+  transform: rotate(45deg);
+}
+
+.about-me .about-wrapper .skills .skill .icon-circle {
+  border-radius: 50%;
 }
 
 .about-me .about-wrapper .skills .skill ul {
