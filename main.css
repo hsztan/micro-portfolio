@@ -280,6 +280,10 @@ nav ul .email-icon {
   line-height: 28px;
 }
 
+.works .featured .tags {
+  display: flex;
+}
+
 .works .featured .tags a {
   display: inline-block;
   margin-top: 24px;
@@ -349,6 +353,10 @@ nav ul .email-icon {
   font-weight: normal;
   font-size: 17px;
   line-height: 24px;
+}
+
+.cards-wrapper .cards .tags {
+  display: flex;
 }
 
 .cards-wrapper .card .tags a {
