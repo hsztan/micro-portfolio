@@ -527,6 +527,7 @@ nav ul .email-icon {
 /* About Me styles */
 
 .about-me {
+  margin-top: 130px;
   width: 100vw;
   color: #fff;
   background-color: #262626;
@@ -537,3 +538,73 @@ nav ul .email-icon {
   margin: 0 10%;
 }
 
+.about-me .wrapper .content {
+  max-width: 566px;
+}
+
+.about-me .wrapper .content h2 {
+  margin-top: 130px;
+  color: #f55800;
+  font-family: Crete Round, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 81px;
+}
+
+.about-me .wrapper .content p {
+  margin-top: 24px;
+  font-family: Inter;
+  color: #F4F5F7;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.about-me .wrapper .content button {
+  margin-top: 24px;
+  padding: 12px;
+  color: #fff;
+  background-color: #f55800;
+  border: none;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.about-me .wrapper .separator {
+  margin-top: 139px;
+  max-width: 1156px;
+  border: 1px solid #fff;
+  content: "";
+}
+
+.about-me .wrapper .details {
+  margin-top: 146px;
+}
+
+.about-me .wrapper .skills {
+  display: grid;
+  grid-gap: 176px;
+  grid-template-columns: repeat(3, 235px);
+}
+
+.about-me .wrapper .skills .skill h4 {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.about-me .wrapper .skills .skill ul {
+  margin-top: 44px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+}
