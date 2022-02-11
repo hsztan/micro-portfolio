@@ -483,6 +483,7 @@ nav ul .email-icon {
 
   .cards-wrapper {
     margin-top: 24px;
+    padding-bottom: 120px;
     display: grid;
     grid-template-rows: repeat(auto-fit, 386px);
     row-gap: 24px;
