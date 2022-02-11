@@ -393,6 +393,11 @@ nav ul .email-icon {
 }
 
 @media only screen and (max-width: 600px) {
+  .works {
+    width: 327px;
+    margin: 120px 24px;
+  }
+
   .works .title {
     width: 327px;
     margin-top: 120px;
@@ -400,6 +405,7 @@ nav ul .email-icon {
   }
 
   .works .title h2 {
+    padding-bottom: 12px;
     font-family: Crete Round, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -410,7 +416,11 @@ nav ul .email-icon {
   .works .title .separator {
     margin-top: 24px;
     height: 0;
-    border: 1px solid #212121;
+    border: 0.5px solid #212121;
+  }
+
+  .works .featured .image {
+    width: 327px;
   }
 
   .works .featured .image img {
@@ -419,7 +429,8 @@ nav ul .email-icon {
   }
 
   .works .featured {
-    margin-top: 114px;
+    width: 327px;
+    margin-top: 80px;
     flex-direction: column;
     gap: 24px;
   }
@@ -440,6 +451,7 @@ nav ul .email-icon {
 
   .works .featured .tags a {
     margin-top: 12px;
+    margin-right: 10px;
   }
 
   .works .featured button {
@@ -458,8 +470,8 @@ nav ul .email-icon {
   .cards-wrapper {
     margin-top: 24px;
     display: grid;
-    grid-template-rows: repeat(auto-fit, 327px);
-    row-gap: 0;
+    grid-template-rows: repeat(auto-fit, 386px);
+    row-gap: 24px;
     column-gap: 0x;
   }
 
