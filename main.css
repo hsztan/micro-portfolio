@@ -355,7 +355,7 @@ nav ul .email-icon {
   line-height: 24px;
 }
 
-.cards-wrapper .cards .tags {
+.cards-wrapper .card .tags {
   display: flex;
 }
 
@@ -523,3 +523,17 @@ nav ul .email-icon {
     display: block;
   }
 }
+
+/* About Me styles */
+
+.about-me {
+  width: 100vw;
+  color: #fff;
+  background-color: #262626;
+}
+
+.about-me .wrapper {
+  width: 1157px;
+  margin: 0 10%;
+}
+
