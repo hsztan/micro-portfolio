@@ -591,8 +591,12 @@ nav ul .email-icon {
 .about-me .about-wrapper .skills {
   display: grid;
   grid-gap: 176px;
-  grid-template-columns: repeat(3, 235px);
+  grid-template-columns: repeat(auto-fill, 235px);
   padding-bottom: 142px;
+}
+
+.about-me .about-wrapper .skills .skill {
+  width: 235px;
 }
 
 .about-me .about-wrapper .skills .skill .skill-title {
@@ -638,7 +642,6 @@ nav ul .email-icon {
   .about-me {
     padding-top: 120px;
     background-image: url('./assets/images/about-me-back-mobile.png');
-    /* TODO */
     background-position: top 390px right 0;
   }
 
@@ -653,7 +656,7 @@ nav ul .email-icon {
     font-size: 72px;
     line-height: 88px;
   }
-  
+
   .about-me .about-wrapper .about-content p {
     margin-top: 24px;
     color: #f4f5f7;
@@ -661,19 +664,34 @@ nav ul .email-icon {
     font-size: 16px;
     line-height: 24px;
   }
-  
+
   .about-me .about-wrapper .about-content button {
     margin-top: 24px;
     padding: 12px;
     color: #fff;
     background-color: #ff6b00;
   }
-  
 
   .about-me .about-wrapper .separator {
     margin-top: 209px;
     min-width: 327px;
     border: 1px solid #fff;
     content: "";
+  }
+
+  .about-me .about-wrapper .skills {
+    margin-top: 136px;
+    grid-gap: 44px;
+    justify-content: center;
+  }
+
+  .about-me .about-wrapper .skills .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me .about-wrapper .skills .skill li {
+    text-align: center;
   }
 }
