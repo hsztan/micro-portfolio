@@ -242,6 +242,10 @@ nav ul .email-icon {
   min-width: 350px;
 }
 
+.works .title {
+  width: 1133px;
+}
+
 .works .title .separator {
   flex: 1 1 790px;
   height: 0;
@@ -257,6 +261,10 @@ nav ul .email-icon {
 
 .works .featured .image {
   width: 684px;
+}
+
+.works .featured .content {
+  width: 448px;
 }
 
 .works .featured h3 {
@@ -295,7 +303,7 @@ nav ul .email-icon {
   color: #fff;
   background-color: #f55800;
   border: none;
-  font-family: Inter;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -394,8 +402,9 @@ nav ul .email-icon {
 
 @media only screen and (max-width: 600px) {
   .works {
-    width: 327px;
-    margin: 120px 24px;
+    width: 375px;
+    margin: 0 auto;
+    padding: 0 24px;
   }
 
   .works .title {
@@ -417,6 +426,10 @@ nav ul .email-icon {
     margin-top: 24px;
     height: 0;
     border: 0.5px solid #212121;
+  }
+
+  .works .featured .content {
+    width: 327px;
   }
 
   .works .featured .image {
@@ -456,10 +469,7 @@ nav ul .email-icon {
   .works .featured button {
     margin-top: 24px;
     padding: 12px;
-    color: #fff;
     background-color: #ff6b00;
-    border: none;
-    font-family: Inter;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
