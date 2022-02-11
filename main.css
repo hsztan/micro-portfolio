@@ -228,7 +228,7 @@ nav ul .email-icon {
 }
 
 .works .title {
-  width: 100%;
+  width: 1133px;
   display: flex;
   align-items: center;
 }
@@ -240,10 +240,6 @@ nav ul .email-icon {
   font-size: 40px;
   line-height: 52px;
   min-width: 350px;
-}
-
-.works .title {
-  width: 1133px;
 }
 
 .works .title .separator {
@@ -318,7 +314,7 @@ nav ul .email-icon {
   column-gap: 24px;
 }
 
-.card {
+.cards-wrapper .card {
   width: 369px;
   height: 435px;
   padding: 16px 16px;
@@ -326,7 +322,8 @@ nav ul .email-icon {
   flex-direction: column;
   justify-content: flex-end;
   color: #fff;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 84.18%
@@ -336,7 +333,7 @@ nav ul .email-icon {
   background-position: center;
 }
 
-.card h4 {
+.cards-wrapper .card h4 {
   font-family: Crete Round, Arial, Helvetica, sans-serif;
   text-align: left;
   font-style: normal;
@@ -345,7 +342,7 @@ nav ul .email-icon {
   line-height: 44px;
 }
 
-.card p {
+.cards-wrapper .card p {
   margin-top: 24px;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -354,7 +351,7 @@ nav ul .email-icon {
   line-height: 24px;
 }
 
-.card .tags a {
+.cards-wrapper .card .tags a {
   display: inline-block;
   margin-top: 24px;
   margin-right: 12px;
@@ -368,13 +365,13 @@ nav ul .email-icon {
   border: 1px solid #8993a4;
 }
 
-.card button {
+.cards-wrapper .card button {
   margin-top: 24px;
   padding: 12px;
   color: #fff;
   background-color: #f55800;
   border: none;
-  font-family: Inter;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -384,7 +381,7 @@ nav ul .email-icon {
   display: none;
 }
 
-.card:hover {
+.cards-wrapper .card:hover {
   padding: 0;
   background: url('./assets/images/card-placeholder.png');
   background-repeat: no-repeat;
@@ -392,11 +389,11 @@ nav ul .email-icon {
   border: 2px solid #000;
 }
 
-.card:hover .content {
+.cards-wrapper .card:hover .content {
   display: none;
 }
 
-.card:hover button {
+.cards-wrapper .card:hover button {
   display: block;
 }
 
@@ -481,16 +478,16 @@ nav ul .email-icon {
     display: grid;
     grid-template-rows: repeat(auto-fit, 386px);
     row-gap: 24px;
-    column-gap: 0x;
+    column-gap: 0;
   }
 
-  .card {
+  .cards-wrapper .card {
     padding: 0;
     width: 327px;
     height: 386px;
   }
 
-  .card h4 {
+  .cards-wrapper .card h4 {
     padding: 0 16px;
     text-align: left;
     font-weight: 400;
@@ -498,7 +495,7 @@ nav ul .email-icon {
     line-height: 44px;
   }
 
-  .card p {
+  .cards-wrapper .card p {
     margin-top: 12px;
     padding: 0 16px;
     font-style: normal;
@@ -507,13 +504,13 @@ nav ul .email-icon {
     line-height: 24px;
   }
 
-  .card .tags a {
+  .cards-wrapper .card .tags a {
     margin-top: 12px;
     margin-right: 0;
     margin-left: 12px;
   }
 
-  .card button {
+  .cards-wrapper .card button {
     margin-top: 22px;
     display: block;
   }
