@@ -699,13 +699,18 @@ nav ul .email-icon {
 /* Styling for contact form mobile */
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  width: 100%;
   padding: 120px 24px;
 }
 
-.contact-wrapper h2 {
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 59px;
+}
+
+.contact h2 {
   text-align: center;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -714,7 +719,8 @@ nav ul .email-icon {
   line-height: 44px;
 }
 
-.contact-wrapper input {
+.contact input {
+  color: #979493;
   text-align: left;
   padding: 14px 16px;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -727,17 +733,38 @@ nav ul .email-icon {
   display: block;
 }
 
-.contact-wrapper .email {
+.contact .email {
   margin-top: 25px;
 }
 
-.contact-wrapper textarea {
+.contact textarea {
+  padding: 12px;
+  margin-top: 24px;
   display: block;
   height: 114px;
   background: #fbf8f7;
+  color: #3c3a39;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 textarea:focus,
 input:focus {
   outline: none;
+}
+
+.contact button {
+  align-self: center;
+  display: block;
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background: #ff6b00;
+  border: none;
+  padding: 12px;
 }
