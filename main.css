@@ -326,8 +326,7 @@ nav ul .email-icon {
   flex-direction: column;
   justify-content: flex-end;
   color: #fff;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 84.18%
@@ -582,7 +581,7 @@ nav ul .email-icon {
   margin-top: 139px;
   max-width: 1156px;
   border: 1px solid #fff;
-  content: "";
+  content: '';
 }
 
 .about-me .about-wrapper .details {
@@ -677,7 +676,7 @@ nav ul .email-icon {
     margin-top: 209px;
     min-width: 327px;
     border: 1px solid #fff;
-    content: "";
+    content: '';
   }
 
   .about-me .about-wrapper .skills {
@@ -695,4 +694,50 @@ nav ul .email-icon {
   .about-me .about-wrapper .skills .skill li {
     text-align: center;
   }
+}
+
+/* Styling for contact form mobile */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 120px 24px;
+}
+
+.contact-wrapper h2 {
+  text-align: center;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.contact-wrapper input {
+  text-align: left;
+  padding: 14px 16px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  display: block;
+}
+
+.contact-wrapper .email {
+  margin-top: 25px;
+}
+
+.contact-wrapper textarea {
+  display: block;
+  height: 114px;
+  background: #fbf8f7;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
 }
