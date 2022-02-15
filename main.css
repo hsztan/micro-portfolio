@@ -582,7 +582,7 @@ nav ul .email-icon {
   margin-top: 139px;
   max-width: 1156px;
   border: 1px solid #fff;
-  content: "";
+  content: '';
 }
 
 .about-me .about-wrapper .details {
@@ -677,7 +677,7 @@ nav ul .email-icon {
     margin-top: 209px;
     min-width: 327px;
     border: 1px solid #fff;
-    content: "";
+    content: '';
   }
 
   .about-me .about-wrapper .skills {
@@ -695,4 +695,97 @@ nav ul .email-icon {
   .about-me .about-wrapper .skills .skill li {
     text-align: center;
   }
+}
+
+/* Styling for contact form mobile */
+
+.contact {
+  width: 100%;
+  padding: 120px 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 59px;
+}
+
+.contact .title {
+  text-align: center;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.contact input {
+  color: #979493;
+  text-align: left;
+  padding: 14px 16px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  display: block;
+}
+
+.contact .email {
+  margin-top: 25px;
+}
+
+.contact textarea {
+  padding: 12px;
+  margin-top: 24px;
+  display: block;
+  height: 114px;
+  background: #fbf8f7;
+  color: #3c3a39;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.contact .form-btn {
+  align-self: center;
+  display: block;
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background: #ff6b00;
+  border: none;
+  padding: 12px;
+}
+
+/* Social footer section styling */
+
+.social-footer {
+  width: 100%;
+}
+
+.social-footer .line {
+  display: block;
+  width: 100%;
+  border: 1px solid #dfe1e6;
+}
+
+.social-footer .social-links {
+  padding: 25px 99px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
