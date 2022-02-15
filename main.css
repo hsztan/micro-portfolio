@@ -768,3 +768,14 @@ input:focus {
   border: none;
   padding: 12px;
 }
+
+/* Social footer section styling */
+
+.social {
+  width: 100%;
+}
+
+.social .line {
+  width: 100%;
+  border: 1px solid #dfe1e6;
+}
