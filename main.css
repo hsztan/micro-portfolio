@@ -689,7 +689,8 @@ nav ul .email-icon {
 
   .about-me .about-wrapper {
     width: 327px;
-    margin: 0 10%;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .about-me .about-wrapper .about-content h2 {
