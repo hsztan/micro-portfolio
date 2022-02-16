@@ -848,6 +848,7 @@ input:focus {
 @media screen and (min-width: 992px) {
   .contact {
     display: flex;
+    justify-content: space-around;
     padding: 130px 142px 154px 135px;
   }
 
