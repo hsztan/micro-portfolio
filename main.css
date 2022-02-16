@@ -25,18 +25,18 @@ ul {
   font-size: 17px;
   line-height: 24px;
   border: none;
-  background: #F55800;
+  background: #f55800;
 }
 
 .btn.btn-main:hover {
-  color: #f55800; 
+  color: #f55800;
   background: #fff5e1;
   border: 1px solid #f55800;
 }
 
 .btn.btn-main:focus {
   color: #f4f1f0;
-  background: #E05304;
+  background: #e05304;
 }
 
 .btn.btn-main:disabled {
@@ -825,9 +825,9 @@ input:focus {
 /* Styling contact for desktop */
 
 @media screen and (min-width: 992px) {
-  .contact{
+  .contact {
     display: flex;
-    padding: 130px 142px 154px 135px
+    padding: 130px 142px 154px 135px;
   }
 
   .contact .title {
