@@ -45,6 +45,10 @@ ul {
   background: #f4f1f0;
 }
 
+header {
+  height: 72px;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -187,8 +191,9 @@ nav ul .email-icon {
 
 @media only screen and (max-width: 600px) {
   .headline {
+    padding: 120px 0 130px 0;
     justify-content: center;
-    height: 662px;
+    height: 590px;
     flex-direction: column;
     background-image: url('./assets/images/illustration-header-mobile.png');
     background-position: bottom -40px right 0;
@@ -208,7 +213,6 @@ nav ul .email-icon {
   }
 
   .headline .content h1 {
-    padding-top: 50px;
     font-size: 56px;
     line-height: 64px;
   }
@@ -737,6 +741,8 @@ nav ul .email-icon {
 
   .about-me .about-wrapper .skills .skill li {
     text-align: center;
+    line-height: 43px;
+    padding-bottom: 25px;
   }
 }
 
