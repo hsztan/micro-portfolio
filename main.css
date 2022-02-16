@@ -344,11 +344,12 @@ nav ul .email-icon {
 
 .cards-wrapper {
   margin: 0 auto;
-  padding-top: 37px;
+  width: 1155px;
+  padding-top: 24px;
   display: grid;
   grid-template-columns: repeat(3, 360px);
+  justify-content: space-between;
   row-gap: 37px;
-  column-gap: 24px;
 }
 
 .cards-wrapper .card {
