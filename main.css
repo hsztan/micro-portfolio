@@ -832,8 +832,12 @@ input:focus {
     background: #f55800;
   }
 
-  .content .comment::placeholder {
-    content: 'gBRUHAKSJHDFJKASDHFS';
+  .social-footer .social-links {
+    width: 200px;
+    margin: 0 auto;
+    padding: 16px 0;
+    justify-content: space-between;
   }
 
 }
+
