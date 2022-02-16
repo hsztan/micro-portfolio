@@ -341,7 +341,7 @@ nav ul .email-icon {
 .cards-wrapper {
   margin-top: 37px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 360px);
+  grid-template-columns: repeat(3, 360px);
   row-gap: 37px;
   column-gap: 24px;
 }
@@ -363,6 +363,10 @@ nav ul .email-icon {
     url('./assets/images/card-placeholder.png');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.cards-wrapper .card .title {
+ width: 100%;
 }
 
 .cards-wrapper .card h4 {
