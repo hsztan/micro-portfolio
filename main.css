@@ -252,7 +252,6 @@ nav ul .email-icon {
 /* Styling for works section */
 
 .works {
-  margin: 0 auto;
   width: 100%;
   margin: 10% 0;
 }
@@ -372,7 +371,7 @@ nav ul .email-icon {
 }
 
 .cards-wrapper .card .title {
- width: 100%;
+  width: 100%;
 }
 
 .cards-wrapper .card h4 {
@@ -753,7 +752,7 @@ nav ul .email-icon {
   margin-top: 59px;
 }
 
-.contact .title {
+.contact .intro {
   text-align: center;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
