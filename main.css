@@ -172,7 +172,8 @@ nav ul .email-icon {
   }
 
   .headline .content {
-    margin: 0 auto;
+    align-self: center;
+    margin: 0;
     max-width: 328px;
     width: 100%;
   }
@@ -200,8 +201,8 @@ nav ul .email-icon {
   }
 
   .headline .social {
-    margin-left: 15px;
     align-self: flex-start;
+    margin-left: 15px;
     height: 20px;
     order: 2;
   }
@@ -734,6 +735,10 @@ nav ul .email-icon {
   display: block;
 }
 
+.contact .full-name {
+  display: none;
+}
+
 .contact .email {
   margin-top: 25px;
 }
@@ -788,4 +793,47 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Styling contact for desktop */
+
+@media screen and (min-width: 992px) {
+  .contact{
+    display: flex;
+    padding: 130px 142px 154px 135px
+  }
+
+  .contact .title {
+    color: #262626;
+    text-align: left;
+    width: 445px;
+    height: 256px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact .contact-form {
+    width: 684px;
+    margin-top: 0;
+  }
+
+  .contact .full-name {
+    width: 100%;
+    display: flex;
+    flex: 1;
+  }
+
+  .contact .name {
+    display: none;
+  }
+
+  .contact .form-btn {
+    align-self: flex-start;
+    background: #f55800;
+  }
+
+  .content .comment::placeholder {
+    content: 'gBRUHAKSJHDFJKASDHFS';
+  }
+
 }
