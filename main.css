@@ -188,11 +188,12 @@ nav ul .email-icon {
 @media only screen and (max-width: 600px) {
   .headline {
     justify-content: center;
+    height: 662px;
     flex-direction: column;
     background-image: url('./assets/images/illustration-header-mobile.png');
-    background-position: bottom 0 right 0;
+    background-position: bottom -40px right 0;
     background-repeat: no-repeat;
-    background-size: 190px;
+    background-size: 140px;
   }
 
   .headline .background {
@@ -207,6 +208,7 @@ nav ul .email-icon {
   }
 
   .headline .content h1 {
+    padding-top: 50px;
     font-size: 56px;
     line-height: 64px;
   }
@@ -843,7 +845,7 @@ input:focus {
     padding: 130px 142px 154px 135px;
   }
 
-  .contact .title {
+  .contact .intro {
     color: #262626;
     padding-right: 20px;
     text-align: left;
