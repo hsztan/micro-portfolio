@@ -17,7 +17,7 @@ ul {
   color: inherit;
 }
 
-.btn:active {
+.btn.btn-main:active {
   color: #fff;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -28,18 +28,18 @@ ul {
   background: #F55800;
 }
 
-.btn:hover {
+.btn.btn-main:hover {
   color: #f55800; 
   background: #fff5e1;
   border: 1px solid #f55800;
 }
 
-.btn:focus {
+.btn.btn-main:focus {
   color: #f4f1f0;
   background: #E05304;
 }
 
-.btn:disabled {
+.btn.btn-main:disabled {
   color: #5b5957;
   background: #f4f1f0;
 }
