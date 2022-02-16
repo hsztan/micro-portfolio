@@ -252,7 +252,7 @@ nav ul .email-icon {
 
 .works {
   width: 100%;
-  margin: 10% 10%;
+  margin: 10% 0;
 }
 
 .works .title {
@@ -339,7 +339,9 @@ nav ul .email-icon {
 }
 
 .cards-wrapper {
-  margin-top: 37px;
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-left: 24px;
   display: grid;
   grid-template-columns: repeat(3, 360px);
   row-gap: 37px;
