@@ -17,6 +17,33 @@ ul {
   color: inherit;
 }
 
+.btn:active {
+  color: #fff;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+  background: #F55800;
+}
+
+.btn:hover {
+  color: #f55800; 
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.btn:focus {
+  color: #f4f1f0;
+  background: #E05304;
+}
+
+.btn:disabled {
+  color: #5b5957;
+  background: #f4f1f0;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -844,4 +871,3 @@ input:focus {
     justify-content: space-between;
   }
 }
-
