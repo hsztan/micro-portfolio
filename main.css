@@ -576,8 +576,8 @@ nav ul .email-icon {
 }
 
 .about-me .about-wrapper {
-  width: 1157px;
-  margin: 0 10%;
+  width: 100%;
+  padding: 0 142px;
 }
 
 .about-me .about-wrapper .about-content {
@@ -630,7 +630,7 @@ nav ul .email-icon {
 .about-me .about-wrapper .skills {
   display: grid;
   grid-gap: 176px;
-  grid-template-columns: repeat(auto-fill, 235px);
+  grid-template-columns: repeat(3, 235px);
   padding-bottom: 142px;
 }
 
