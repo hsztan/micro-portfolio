@@ -94,7 +94,7 @@
               <li><a href="#">bootstrap</a></li>
               <li><a href="#">Ruby</a></li>
             </ul>
-            <button>See Project</button>
+            <button class="btn btn-main">See Project</button>
           </div>
         </div>
         <div class="cards-wrapper">
@@ -111,7 +111,7 @@
                 <li><a href="#">Ruby</a></li>
               </ul>
             </div>
-            <button>See Project</button>
+            <button class="btn btn-main">See Project</button>
           </div>
           <div class="card">
             <div class="content">
@@ -126,7 +126,7 @@
                 <li><a href="#">Ruby</a></li>
               </ul>
             </div>
-            <button>See Project</button>
+            <button class="btn btn-main">See Project</button>
           </div>
           <div class="card">
             <div class="content">
@@ -141,7 +141,7 @@
                 <li><a href="#">Ruby</a></li>
               </ul>
             </div>
-            <button>See Project</button>
+            <button class="btn btn-main">See Project</button>
           </div>
           <div class="card">
             <div class="content">
@@ -156,7 +156,7 @@
                 <li><a href="#">Ruby</a></li>
               </ul>
             </div>
-            <button>See Project</button>
+            <button class="btn btn-main">See Project</button>
           </div>
           <div class="card">
             <div class="content">
@@ -171,7 +171,7 @@
                 <li><a href="#">Ruby</a></li>
               </ul>
             </div>
-            <button>See Project</button>
+            <button class="btn btn-main">See Project</button>
           </div>
           <div class="card">
             <div class="content">
@@ -186,7 +186,7 @@
                 <li><a href="#">Ruby</a></li>
               </ul>
             </div>
-            <button>See Project</button>
+            <button class="btn btn-main">See Project</button>
           </div>
         </div>
       </section>
@@ -200,7 +200,7 @@
               you like what you see and have a project you need coded, don't
               hestiate to contact me.
             </p>
-            <button>Get My Resume</button>
+            <button class="btn btn-main">Get My Resume</button>
           </div>
           <div class="separator"></div>
           <div class="details">
@@ -250,7 +250,7 @@
         </div>
       </section>
       <section class="contact">
-        <h2 class="title">
+        <h2 class="intro">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h2>
@@ -267,6 +267,24 @@
             placeholder="Full name"
             required
           />
+          <div class="full-name">
+            <input
+            class="first-name"
+            type="text"
+            maxlength="30"
+            name="name"
+            placeholder="First Name"
+            required
+          />
+          <input
+            class="last-name"
+            type="text"
+            maxlength="30"
+            name="last-name"
+            placeholder="Last Name"
+            required
+          />
+        </div>
           <input
             class="email"
             type="email"
@@ -274,45 +292,45 @@
             placeholder="Email address"
             required
           />
-          <textarea
+          <textarea class="comment"
             placeholder="Enter text here"
             name="comment"
             maxlength="500"
             required
           ></textarea>
-          <button class="form-btn" type="submit">Get in touch</button>
+          <button class="form-btn btn btn-main" type="submit">Get in touch</button>
         </form>
       </section>
-      <footer class="social-footer">
-        <hr class="line" />
-        <ul class="social-links">
-          <li>
-            <a href="#"
-              ><img src="./assets/icons/github-dark.png" alt="github"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./assets/icons/linkedin-dark.png" alt="linkedin"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./assets/icons/angelist-dark.png" alt="angelist"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./assets/icons/twitter-dark.png" alt="twitter"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./assets/icons/medium-dark.png" alt="medium"
-            /></a>
-          </li>
-        </ul>
-      </footer>
     </main>
+    <footer class="social-footer">
+      <hr class="line" />
+      <ul class="social-links">
+        <li>
+          <a href="#"
+            ><img src="./assets/icons/github-dark.png" alt="github"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./assets/icons/linkedin-dark.png" alt="linkedin"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./assets/icons/angelist-dark.png" alt="angelist"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./assets/icons/twitter-dark.png" alt="twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./assets/icons/medium-dark.png" alt="medium"
+          /></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

@@ -7,6 +7,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Inter', sans-serif;
 }
 
@@ -15,6 +16,37 @@ ul {
   text-decoration: none;
   list-style: none;
   color: inherit;
+}
+
+.btn.btn-main:active {
+  color: #fff;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+  background: #f55800;
+}
+
+.btn.btn-main:hover {
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.btn.btn-main:focus {
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+.btn.btn-main:disabled {
+  color: #5b5957;
+  background: #f4f1f0;
+}
+
+header {
+  height: 72px;
 }
 
 nav {
@@ -159,12 +191,14 @@ nav ul .email-icon {
 
 @media only screen and (max-width: 600px) {
   .headline {
+    padding: 120px 0 130px 0;
     justify-content: center;
+    height: 590px;
     flex-direction: column;
     background-image: url('./assets/images/illustration-header-mobile.png');
-    background-position: bottom 0 right 0;
+    background-position: bottom -40px right 0;
     background-repeat: no-repeat;
-    background-size: 190px;
+    background-size: 140px;
   }
 
   .headline .background {
@@ -172,7 +206,8 @@ nav ul .email-icon {
   }
 
   .headline .content {
-    margin: 0 auto;
+    align-self: center;
+    margin: 0;
     max-width: 328px;
     width: 100%;
   }
@@ -200,8 +235,8 @@ nav ul .email-icon {
   }
 
   .headline .social {
-    margin-left: 15px;
     align-self: flex-start;
+    margin-left: 15px;
     height: 20px;
     order: 2;
   }
@@ -224,10 +259,11 @@ nav ul .email-icon {
 
 .works {
   width: 100%;
-  margin: 10% 10%;
+  margin: 10% 0;
 }
 
 .works .title {
+  margin: 0 auto;
   width: 1133px;
   display: flex;
   align-items: center;
@@ -252,6 +288,7 @@ nav ul .email-icon {
   color: #091e42;
   margin-top: 114px;
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -311,11 +348,13 @@ nav ul .email-icon {
 }
 
 .cards-wrapper {
-  margin-top: 37px;
+  margin: 0 auto;
+  width: 1155px;
+  padding-top: 24px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 360px);
+  grid-template-columns: repeat(3, 360px);
+  justify-content: space-between;
   row-gap: 37px;
-  column-gap: 24px;
 }
 
 .cards-wrapper .card {
@@ -335,6 +374,10 @@ nav ul .email-icon {
     url('./assets/images/card-placeholder.png');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.cards-wrapper .card .title {
+  width: 100%;
 }
 
 .cards-wrapper .card h4 {
@@ -482,12 +525,12 @@ nav ul .email-icon {
   }
 
   .cards-wrapper {
+    width: 100%;
     margin-top: 24px;
     padding-bottom: 120px;
     display: grid;
-    grid-template-rows: repeat(auto-fit, 386px);
+    grid-template-columns: repeat(auto-fit, 386px);
     row-gap: 24px;
-    column-gap: 0;
   }
 
   .cards-wrapper .card {
@@ -538,8 +581,8 @@ nav ul .email-icon {
 }
 
 .about-me .about-wrapper {
-  width: 1157px;
-  margin: 0 10%;
+  width: 100%;
+  padding: 0 142px;
 }
 
 .about-me .about-wrapper .about-content {
@@ -586,13 +629,16 @@ nav ul .email-icon {
 }
 
 .about-me .about-wrapper .details {
+  width: 100%;
   margin-top: 146px;
 }
 
 .about-me .about-wrapper .skills {
+  /* margin: 0 auto; */
+  width: 100%;
   display: grid;
-  grid-gap: 176px;
-  grid-template-columns: repeat(auto-fill, 235px);
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, 235px);
   padding-bottom: 142px;
 }
 
@@ -648,7 +694,8 @@ nav ul .email-icon {
 
   .about-me .about-wrapper {
     width: 327px;
-    margin: 0 10%;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .about-me .about-wrapper .about-content h2 {
@@ -694,6 +741,8 @@ nav ul .email-icon {
 
   .about-me .about-wrapper .skills .skill li {
     text-align: center;
+    line-height: 43px;
+    padding-bottom: 25px;
   }
 }
 
@@ -711,7 +760,7 @@ nav ul .email-icon {
   margin-top: 59px;
 }
 
-.contact .title {
+.contact .intro {
   text-align: center;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -732,6 +781,10 @@ nav ul .email-icon {
   border: none;
   border-bottom: 1px solid #dbd8d7;
   display: block;
+}
+
+.contact .full-name {
+  display: none;
 }
 
 .contact .email {
@@ -788,4 +841,55 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Styling contact for desktop */
+
+@media screen and (min-width: 992px) {
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    padding: 130px 142px 154px 135px;
+  }
+
+  .contact .intro {
+    color: #262626;
+    padding-right: 20px;
+    text-align: left;
+    width: 445px;
+    height: 256px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact .contact-form {
+    width: 684px;
+    margin-top: 0;
+  }
+
+  .contact .full-name input {
+    width: 100%;
+    display: block;
+  }
+
+  .contact .full-name {
+    display: flex;
+    gap: 24px;
+  }
+
+  .contact .name {
+    display: none;
+  }
+
+  .contact .form-btn {
+    align-self: flex-start;
+    background: #f55800;
+  }
+
+  .social-footer .social-links {
+    width: 200px;
+    margin: 0 auto;
+    padding: 16px 0;
+    justify-content: space-between;
+  }
 }
