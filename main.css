@@ -442,23 +442,21 @@ nav ul .email-icon {
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #000;
+  animation: backzoom 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes backzoom {
+  from {
+    background-size: 100%
+  }
+  to {
+    background-size: 150%
+  }
 }
 
 .cards-wrapper .card:hover .content {
-  /* display: none; */
- animation: shrinkout 2s;
- animation-fill-mode: forwards;
-}
-
-@keyframes shrinkout {
-  from {
-    width: 100%;
-    height: 100%;
-  }
-  to {
-    width: 0%;
-    height: 0%;
-  }
+  display: none;
 }
 
 .cards-wrapper .card:hover button {
