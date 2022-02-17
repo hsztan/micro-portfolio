@@ -18,6 +18,10 @@ ul {
   color: inherit;
 }
 
+.btn.btn-main {
+  transition: background 1s;
+}
+
 .btn.btn-main:active {
   color: #fff;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -438,13 +442,25 @@ nav ul .email-icon {
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #000;
+  animation: backzoom 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes backzoom {
+  from {
+    background-size: 100%;
+  }
+
+  to {
+    background-size: 150%;
+  }
 }
 
 .cards-wrapper .card:hover .content {
   display: none;
 }
 
-.cards-wrapper .card:hover button {
+.cards-wrapper .card:hover .btn {
   display: block;
 }
 
@@ -608,7 +624,7 @@ nav ul .email-icon {
   line-height: 32px;
 }
 
-.about-me .about-wrapper .about-content button {
+.about-me .about-content button {
   margin-top: 24px;
   padding: 12px;
   color: #fff;
