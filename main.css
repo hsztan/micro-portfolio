@@ -448,10 +448,11 @@ nav ul .email-icon {
 
 @keyframes backzoom {
   from {
-    background-size: 100%
+    background-size: 100%;
   }
+
   to {
-    background-size: 150%
+    background-size: 150%;
   }
 }
 
@@ -459,7 +460,7 @@ nav ul .email-icon {
   display: none;
 }
 
-.cards-wrapper .card:hover button {
+.cards-wrapper .card:hover .btn {
   display: block;
 }
 
@@ -623,7 +624,7 @@ nav ul .email-icon {
   line-height: 32px;
 }
 
-.about-me .about-wrapper .about-content button {
+.about-me .about-content button {
   margin-top: 24px;
   padding: 12px;
   color: #fff;
