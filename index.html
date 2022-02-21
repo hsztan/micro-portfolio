@@ -6,6 +6,20 @@
     <link rel="stylesheet" href="./main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-43BJ6SBM62"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-43BJ6SBM62')
+    </script>
   </head>
   <body>
     <header>
@@ -269,22 +283,22 @@
           />
           <div class="full-name">
             <input
-            class="first-name"
-            type="text"
-            maxlength="30"
-            name="name"
-            placeholder="First Name"
-            required
-          />
-          <input
-            class="last-name"
-            type="text"
-            maxlength="30"
-            name="last-name"
-            placeholder="Last Name"
-            required
-          />
-        </div>
+              class="first-name"
+              type="text"
+              maxlength="30"
+              name="name"
+              placeholder="First Name"
+              required
+            />
+            <input
+              class="last-name"
+              type="text"
+              maxlength="30"
+              name="last-name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
           <input
             class="email"
             type="email"
@@ -292,13 +306,16 @@
             placeholder="Email address"
             required
           />
-          <textarea class="comment"
+          <textarea
+            class="comment"
             placeholder="Enter text here"
             name="comment"
             maxlength="500"
             required
           ></textarea>
-          <button class="form-btn btn btn-main" type="submit">Get in touch</button>
+          <button class="form-btn btn btn-main" type="submit">
+            Get in touch
+          </button>
         </form>
       </section>
     </main>
