@@ -273,6 +273,7 @@
           action="https://formspree.io/f/mgedkaqb"
           method="post"
         >
+          <label for="name">Name</label>
           <input
             class="name"
             type="text"
@@ -282,14 +283,16 @@
             required
           />
           <div class="full-name">
+            <label for="first-name">First Name</label>
             <input
               class="first-name"
               type="text"
               maxlength="30"
-              name="name"
+              name="first-name"
               placeholder="First Name"
               required
             />
+            <label for="last-name">Last Name</label>
             <input
               class="last-name"
               type="text"
@@ -299,6 +302,7 @@
               required
             />
           </div>
+          <label for="email">Email</label>
           <input
             class="email"
             type="email"
@@ -306,6 +310,7 @@
             placeholder="Email address"
             required
           />
+          <label for="comment">Comment</label>
           <textarea
             class="comment"
             placeholder="Enter text here"
