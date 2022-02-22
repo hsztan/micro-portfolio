@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Henry Nawrocki's Portfolio</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -54,20 +54,20 @@
           <ul>
             <li>
               <a href="#"
-                ><img src="./assets/icons/github.png" alt="github icon"
+                ><img src="./assets/icons/github.png" alt="github"
               /></a>
             </li>
             <li>
-              <a href="#"><img src="./assets/icons/linkedin.png" alt="" /></a>
+              <a href="#"><img src="./assets/icons/linkedin.png" alt="linkedin" /></a>
             </li>
             <li>
-              <a href="#"><img src="./assets/icons/angelist.png" alt="" /></a>
+              <a href="#"><img src="./assets/icons/angelist.png" alt="angelist" /></a>
             </li>
             <li>
-              <a href="#"><img src="./assets/icons/twitter.png" alt="" /></a>
+              <a href="#"><img src="./assets/icons/twitter.png" alt="twitter" /></a>
             </li>
             <li>
-              <a href="#"><img src="./assets/icons/medium.png" alt="" /></a>
+              <a href="#"><img src="./assets/icons/medium.png" alt="medium" /></a>
             </li>
           </ul>
         </div>
@@ -224,7 +224,7 @@
               <div class="skill">
                 <div class="skill-title">
                   <div class="icon-figure icon-diamond"></div>
-                  <h4>Language</h4>
+                  <h3>Language</h3>
                 </div>
                 <ul>
                   <li>Javascript</li>
@@ -236,7 +236,7 @@
               <div class="skill">
                 <div class="skill-title">
                   <div class="icon-figure icon-square"></div>
-                  <h4>Frameworks</h4>
+                  <h3>Frameworks</h3>
                 </div>
                 <ul>
                   <li>Bootstrap</li>
@@ -249,7 +249,7 @@
               <div class="skill">
                 <div class="skill-title">
                   <div class="icon-figure icon-circle"></div>
-                  <h4>Skills</h4>
+                  <h3>Skills</h3>
                 </div>
                 <ul>
                   <li>Codekit</li>
@@ -273,7 +273,9 @@
           action="https://formspree.io/f/mgedkaqb"
           method="post"
         >
+          <label for="name">Name</label>
           <input
+            id="name"
             class="name"
             type="text"
             maxlength="30"
@@ -282,15 +284,19 @@
             required
           />
           <div class="full-name">
+            <label for="first-name">First Name</label>
             <input
+              id="first-name"
               class="first-name"
               type="text"
               maxlength="30"
-              name="name"
+              name="first-name"
               placeholder="First Name"
               required
             />
+            <label for="last-name">Last Name</label>
             <input
+              id="last-name"
               class="last-name"
               type="text"
               maxlength="30"
@@ -299,14 +305,18 @@
               required
             />
           </div>
+          <label for="email">Email</label>
           <input
+            id="email"
             class="email"
             type="email"
             name="email"
             placeholder="Email address"
             required
           />
+          <label for="comment">Comment</label>
           <textarea
+            id="comment"
             class="comment"
             placeholder="Enter text here"
             name="comment"

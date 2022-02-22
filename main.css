@@ -668,7 +668,7 @@ nav ul .email-icon {
   align-items: center;
 }
 
-.about-me .about-wrapper .skills .skill h4 {
+.about-me .about-wrapper .skills .skill h3 {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -774,6 +774,11 @@ nav ul .email-icon {
   flex-direction: column;
   align-items: stretch;
   margin-top: 59px;
+}
+
+.contact-form label {
+  opacity: 0;
+  position: absolute;
 }
 
 .contact .intro {
