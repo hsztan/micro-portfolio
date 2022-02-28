@@ -53,7 +53,7 @@ header {
   height: 72px;
 }
 
-nav {
+nav#main-menu {
   position: fixed;
   top: 0;
   font-weight: 700;
@@ -373,8 +373,7 @@ nav ul .email-icon {
   flex-direction: column;
   justify-content: flex-end;
   color: #fff;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 84.18%
