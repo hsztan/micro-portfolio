@@ -73,6 +73,15 @@ nav#popup-menu {
   position: static;
 }
 
+.popup-list-item {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+}
+
 nav .start {
   flex: 10 10 10%;
 }

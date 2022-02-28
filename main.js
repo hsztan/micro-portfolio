@@ -1,13 +1,13 @@
-const mainMenu = document.querySelector('#main-menu')
-const popUpMenu = document.querySelector('#popup-menu')
-const sandwich = document.querySelector('.sandwich')
-const header = document.querySelector('header')
+const mainMenu = document.querySelector('#main-menu');
+const popUpMenu = document.querySelector('#popup-menu');
+const toggler = document.querySelector('.sandwich');
+const header = document.querySelector('header');
 
-const clickSandwich = (e) => {
-  header.style.height = '100vh'
-  mainMenu.style.display = 'none'
-  mainMenu.style.position = 'static'
-  popUpMenu.style.display = 'block'
-}
+const clickToggler = (e) => {
+  header.style.cssText = 'height: 100vh; background-color: #3c3a39;';
+  mainMenu.style.display = 'none';
+  mainMenu.style.position = 'static';
+  popUpMenu.style.display = 'block';
+};
 
-sandwich.addEventListener('click', clickSandwich)
+toggler.addEventListener('click', clickToggler);
