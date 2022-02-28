@@ -67,7 +67,7 @@ nav#main-menu {
   align-items: center;
 }
 
-nav#popup-menu {
+#popup-menu {
   color: black;
   display: none;
   position: static;
