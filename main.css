@@ -67,6 +67,10 @@ nav {
   align-items: center;
 }
 
+nav#popup-menu {
+  display: none;
+}
+
 nav .start {
   flex: 10 10 10%;
 }
