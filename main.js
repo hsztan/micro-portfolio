@@ -36,6 +36,8 @@ const btn = document.querySelectorAll('.btn');
 const featuredWork = document.querySelector('#featured-work');
 const cardsWrapper = document.querySelector('.cards-wrapper');
 
+let ulItems = '';
+works[0].technologies.forEach((tech) => { ulItems += `<li><a href="#">${tech}</a></li>`; });
 featuredWork.innerHTML = `
         <div class="title">
           <h2>My Recent Works</h2>
@@ -44,23 +46,15 @@ featuredWork.innerHTML = `
         <div class="featured">
           <div class="image">
             <img
-              src="./assets/images/featured-placeholder.png"
+              src=${works[0].featuredImage}
               alt="featured work"
             />
           </div>
           <div class="content">
-            <h3>Multi-Post Stories</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
+            <h3>${works[0].name}</h3>
+            <p>${works[0].description}</p>
             <ul class="tags">
-              <li><a href="#">css</a></li>
-              <li><a href="#">html</a></li>
-              <li><a href="#">bootstrap</a></li>
-              <li><a href="#">Ruby</a></li>
+             ${ulItems}
             </ul>
             <button class="btn btn-main" type="button">See Project</button>
           </div>
