@@ -66,23 +66,22 @@ featuredWork.innerHTML = `
           </div>
         </div>
 `;
-for (let i = 1; i < works.length; i += 1) {
 
-}
-cardsWrapper.innerHTML = `
-          <div class="card">
-            <div class="content">
-              <h4 class="title">Profesional Art Printing Data More</h4>
-              <p class="summary">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="tags">
-                <li><a href="#">html</a></li>
-                <li><a href="#">bootstrap</a></li>
-                <li><a href="#">Ruby</a></li>
-              </ul>
-            </div>
-            <button class="btn btn-main" type="button">See Project</button>
-          </div>
+for (let i = 1; i < works.length; i += 1) {
+  let ulItems = '';
+  works[i].technologies.forEach((tech) => { ulItems += `<li><a href="#">${tech}</a></li>`; });
+  const cardDiv = document.createElement('div');
+  cardDiv.innerHTML = `
+  <div class="card">
+    <div class="content">
+      <h4 class="title">${works[i].name}</h4>
+      <p class="summary">${works[i].description}</p>
+      <ul class="tags">
+        ${ulItems}
+      </ul>
+    </div>
+    <button class="btn btn-main" type="button">See Project</button>
+  </div>
 `;
+  cardsWrapper.appendChild(cardDiv);
+}
