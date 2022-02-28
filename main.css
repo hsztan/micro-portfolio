@@ -53,7 +53,7 @@ header {
   height: 72px;
 }
 
-nav {
+nav#main-menu {
   position: fixed;
   top: 0;
   font-weight: 700;
@@ -65,6 +65,37 @@ nav {
   color: #fff;
   display: flex;
   align-items: center;
+}
+
+#popup-menu {
+  padding: 0 24px;
+  color: black;
+  display: none;
+  position: static;
+}
+
+#close-popup-menu {
+  float: right;
+  padding: 15px;
+}
+
+.close-icon {
+  padding-top: 10px;
+  width: 1.15rem;
+}
+
+.popup-list-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  padding: 15px;
+  border-bottom: 1px solid #6f6c6b;
 }
 
 nav .start {
