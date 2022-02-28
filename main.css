@@ -68,6 +68,7 @@ nav#main-menu {
 }
 
 nav#popup-menu {
+  color: black;
   display: none;
 }
 

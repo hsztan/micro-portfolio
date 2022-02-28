@@ -4,6 +4,7 @@ const sandwich = document.querySelector('.sandwich')
 
 const clickSandwich = (e) => {
   mainMenu.style.display = 'none'
+  mainMenu.style.opacity = 0
   popUpMenu.style.display = 'block'
 }
 
