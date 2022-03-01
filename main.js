@@ -96,7 +96,7 @@ for (let i = 1; i < works.length; i += 1) {
   });
 }
 
-// On mouse leave
+// On card mouse leave
 for (let i = 1; i < works.length; i += 1) {
   const currentCard = document.querySelector(`.card-${i}`);
   currentCard.addEventListener('mouseleave', () => {
