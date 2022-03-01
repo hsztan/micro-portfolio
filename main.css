@@ -1062,7 +1062,6 @@ input:focus {
 
   #work-modal .modal-content {
     width: 80%;
-    height: calc(80vw / 1.8);
     background: #fff;
     margin: 60px auto;
     padding: 24px;
@@ -1117,13 +1116,20 @@ input:focus {
 
   .modal-main .modal-img {
     flex: 1;
-    height: 100%;
     width: auto;
   }
 
   .modal-info {
+    min-width: 0;
     width: 42%;
     padding-left: 25px;
+  }
+
+  .modal-right {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
 
   #work-modal .modal-main p {
@@ -1137,8 +1143,8 @@ input:focus {
   }
 
   #work-modal .modal-btns {
+    bottom: 0;
     margin-top: 0;
-    padding-top: 60px;
     height: 48px;
     display: flex;
     justify-content: flex-start;
