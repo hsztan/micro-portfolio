@@ -305,13 +305,15 @@ nav ul .email-icon {
 }
 
 #work-modal .modal-content {
+  width: 343px;
   background: #fff;
-  margin: 60px 16px;
+  margin: 60px auto;
   padding: 16px;
 }
 
-#work-modal title {
+#work-modal .modal-title {
   display: flex;
+  justify-content: space-between;
 }
 
 #work-modal h2 {
@@ -322,6 +324,10 @@ nav ul .email-icon {
   font-size: 32px;
   line-height: 44px;
 }
+
+/* #work-modal #close-works-modal {
+  justify-self: flex-end;
+} */
 
 #work-modal .tech-tags {
   margin-top: 38px;
@@ -373,15 +379,15 @@ nav ul .email-icon {
   display: block;
 }
 
+/* TODO: Give buttons percentage width */
 #work-modal button {
-  width: 48%;
   gap: 19px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 12px;
   color: #fff;
-  background-color: #f55800;
+  background-color: #ff6b00;
   border: none;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
