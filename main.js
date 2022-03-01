@@ -75,7 +75,7 @@ for (let i = 1; i < works.length; i += 1) {
         ${ulItems}
       </ul>
     </div>
-    <button class="btn btn-main" type="button">See Project</button>
+    <button class="btn btn-main" type="button" data-work="${i}>See Project</button>
   </div>
 `;
   cardsWrapper.appendChild(cardDiv);
