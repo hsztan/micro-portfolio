@@ -32,7 +32,6 @@ menuItem.forEach((item) => {
 // Mobile-menu ends here
 
 // Getting reference
-const btn = document.querySelectorAll('.btn');
 const featuredWork = document.querySelector('#featured-work');
 const cardsWrapper = document.querySelector('.cards-wrapper');
 
@@ -66,7 +65,7 @@ for (let i = 1; i < works.length; i += 1) {
   works[i].technologies.forEach((tech) => { ulItems += `<li><a href="#">${tech}</a></li>`; });
   const cardDiv = document.createElement('div');
   cardDiv.innerHTML = `
-  <div class="card">
+  <div class="card card-${i}" data-work="${i}">
     <div class="content">
       <h4 class="title">${works[i].name}</h4>
       <p class="summary">${works[i].description}</p>
@@ -78,4 +77,10 @@ for (let i = 1; i < works.length; i += 1) {
   </div>
 `;
   cardsWrapper.appendChild(cardDiv);
+  document.querySelector(`.card.card-${i}`).style.background = ` linear-gradient(
+    180.45deg,
+    rgba(38, 38, 38, 0) 0.75%,
+    rgba(38, 38, 38, 0.9) 84.18%
+  ),
+  url('${works[i].featuredImage}')`;
 }

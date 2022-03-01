@@ -26,7 +26,7 @@ const works = [
   {
     name: 'Website Portfolio',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    ffeaturedImage: './assets/images/card-placeholder.png',
+    featuredImage: './assets/images/card-placeholder.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     urlLive: '',
     urlRepo: '',
@@ -50,7 +50,7 @@ const works = [
   {
     name: 'Website Portfolio',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    ffeaturedImage: './assets/images/card-placeholder.png',
+    featuredImage: './assets/images/card-placeholder.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     urlLive: '',
     urlRepo: '',
