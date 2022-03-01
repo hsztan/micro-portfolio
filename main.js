@@ -180,6 +180,15 @@ const displayModal = (event) => {
   const workModal = createModal(index);
   modalSection.innerHTML = workModal;
   modalSection.style.display = 'block';
+  const closeModalBtn = document.querySelector('#close-works-modal');
+  closeModalBtn.addEventListener('click', () => {
+    modalSection.style.display = 'none';
+  });
+  document.body.addEventListener('click', (e) => {
+    if (e.target.id === 'work-modal') {
+      modalSection.style.display = 'none';
+    }
+  });
 };
 
 workButtons.forEach((btn) => {
