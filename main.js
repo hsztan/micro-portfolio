@@ -58,7 +58,7 @@ featuredWork.innerHTML = `
             <ul class="tags">
              ${ulItems}
             </ul>
-            <button class="btn btn-main" type="button">See Project</button>
+            <button id="work-btn" class="btn btn-main" type="button" data-work="${0}">See Project</button>
           </div>
         </div>
 `;
@@ -71,7 +71,7 @@ for (let i = 1; i < works.length; i += 1) {
   });
   const cardDiv = document.createElement('div');
   cardDiv.innerHTML = `
-  <div class="card card-${i}" data-work="${i}">
+  <div class="card card-${i}">
     <div class="content">
       <h4 class="title">${works[i].name}</h4>
       <p class="summary">${works[i].description}</p>
@@ -79,7 +79,7 @@ for (let i = 1; i < works.length; i += 1) {
         ${ulItems}
       </ul>
     </div>
-    <button class="btn btn-main" type="button" data-work="${i}>See Project</button>
+    <button id="work-btn" class="btn btn-main" type="button" data-work="${i}>See Project</button>
   </div>
 `;
   cardsWrapper.appendChild(cardDiv);
@@ -112,3 +112,71 @@ for (let i = 1; i < works.length; i += 1) {
     url('${works[i].featuredImage}')`;
   });
 }
+
+//
+
+const workButtons = document.querySelectorAll('#work-btn');
+
+const createModal = (i) => `
+  <div class="modal-content">
+          <div class="modal-title">
+            <h2>${works[i].name}</h2>
+            <div id="close-works-modal">
+              <img
+                src="./assets/icons/close-popup-menu.png"
+                alt="close modal"
+              />
+            </div>
+          </div>
+          <ul class="tech-tags">
+            <li><a href="">html</a></li>
+            <li><a href="">Bootstrap</a></li>
+            <li><a href="">Ruby on rails</a></li>
+          </ul>
+          <div class="modal-main">
+            <div class="modal-img">
+              <img src="${works[i].featuredImage}" alt="work" />
+            </div>
+            <div class="modal-info">
+              <div class="modal-right">
+                <p>${works[i].description}</p>
+                <div class="modal-btns">
+                  <button id="btn-1" class="btn btn-main" type="button">
+                  <a href="${works[i].urlLive}" class="modal-links">
+                  <span>
+                    See Live
+                  </span>
+                  <img
+                    class="icon"
+                    src="./assets/icons/see-live.png"
+                    alt="see live"
+                /></a>
+                  </button>
+                  <button id="btn-2" class="btn btn-main" type="button">
+                  <a href="${works[i].urlRepo}" class="modal-links">
+                  <span>
+                    See Source
+                  </span>
+                  <img
+                    class="icon"
+                    src="./assets/icons/github-modal.png"
+                    alt="see source"
+                /></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  `;
+  // return the modal
+
+const displayModal = (event) => {
+  const index = event.target.dataset.work;
+  const workModal = createModal(index);
+  // display the modal
+};
+
+workButtons.forEach((btn) => {
+  btn.addEventListener('click', displayModal);
+});

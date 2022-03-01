@@ -1024,6 +1024,12 @@ input:focus {
   display: block;
 }
 
+#work-modal .modal-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #work-modal button {
   gap: 19px;
   display: flex;
@@ -1153,6 +1159,12 @@ input:focus {
 
   #work-modal button span {
     display: block;
+  }
+
+  #work-modal .modal-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #work-modal button {
