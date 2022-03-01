@@ -1127,20 +1127,22 @@ input:focus {
   }
 
   #work-modal .modal-main p {
-    padding-top: 24px;
+    padding-top: 0;
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 30px;
     color: #344563;
   }
 
   #work-modal .modal-btns {
-    margin-top: 24px;
+    margin-top: 0;
+    padding-top: 60px;
     height: 48px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 7px;
   }
 
   #work-modal button span {
@@ -1161,7 +1163,7 @@ input:focus {
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
-    height: 58px;
+    height: 48px;
   }
 
   #work-modal .modal-btns .icon {
