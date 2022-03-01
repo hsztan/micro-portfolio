@@ -392,6 +392,7 @@ nav ul .email-icon {
 }
 
 #work-modal .modal-btns .icon {
+  display: block;
   height: 60%;
   width: auto;
 }
