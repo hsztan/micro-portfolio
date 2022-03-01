@@ -10,7 +10,7 @@ const works = [
   {
     name: 'Professional Art Printing Data More',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: './assets/images/card-placeholder.png',
+    featuredImage: './assets/images/modal-work-thumbnail.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     urlLive: '',
     urlRepo: '',
@@ -18,7 +18,7 @@ const works = [
   {
     name: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: './assets/images/card-placeholder.png',
+    featuredImage: './assets/images/modal-work-thumbnail.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     urlLive: '',
     urlRepo: '',
@@ -26,7 +26,7 @@ const works = [
   {
     name: 'Website Portfolio',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: './assets/images/card-placeholder.png',
+    featuredImage: './assets/images/modal-work-thumbnail.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     urlLive: '',
     urlRepo: '',
@@ -34,7 +34,7 @@ const works = [
   {
     name: 'Professional Art Printing Data More',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: './assets/images/card-placeholder.png',
+    featuredImage: './assets/images/modal-work-thumbnail.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     urlLive: '',
     urlRepo: '',
@@ -42,7 +42,7 @@ const works = [
   {
     name: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: './assets/images/card-placeholder.png',
+    featuredImage: './assets/images/modal-work-thumbnail.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     urlLive: '',
     urlRepo: '',
@@ -50,7 +50,7 @@ const works = [
   {
     name: 'Website Portfolio',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: './assets/images/card-placeholder.png',
+    featuredImage: './assets/images/modal-work-thumbnail.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     urlLive: '',
     urlRepo: '',
