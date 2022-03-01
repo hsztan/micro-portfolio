@@ -35,6 +35,7 @@ menuItem.forEach((item) => {
 const featuredWork = document.querySelector('#featured-work');
 const cardsWrapper = document.querySelector('.cards-wrapper');
 
+// Featured Work
 let ulItems = '';
 works[0].technologies.forEach((tech) => { ulItems += `<li><a href="#">${tech}</a></li>`; });
 featuredWork.innerHTML = `
@@ -60,6 +61,7 @@ featuredWork.innerHTML = `
         </div>
 `;
 
+// Works cards
 for (let i = 1; i < works.length; i += 1) {
   let ulItems = '';
   works[i].technologies.forEach((tech) => { ulItems += `<li><a href="#">${tech}</a></li>`; });
@@ -77,10 +79,32 @@ for (let i = 1; i < works.length; i += 1) {
   </div>
 `;
   cardsWrapper.appendChild(cardDiv);
-  document.querySelector(`.card.card-${i}`).style.background = ` linear-gradient(
+  const currentCard = document.querySelector(`.card.card-${i}`);
+  currentCard.style.background = ` linear-gradient(
     180.45deg,
     rgba(38, 38, 38, 0) 0.75%,
     rgba(38, 38, 38, 0.9) 84.18%
   ),
   url('${works[i].featuredImage}')`;
+}
+
+// On card mouse enter
+for (let i = 1; i < works.length; i += 1) {
+  const currentCard = document.querySelector(`.card-${i}`);
+  currentCard.addEventListener('mouseenter', () => {
+    currentCard.style.background = `url(${works[i].featuredImage})`;
+  });
+}
+
+// On mouse leave
+for (let i = 1; i < works.length; i += 1) {
+  const currentCard = document.querySelector(`.card-${i}`);
+  currentCard.addEventListener('mouseleave', () => {
+    currentCard.style.background = ` linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 84.18%
+    ),
+    url('${works[i].featuredImage}')`;
+  });
 }
