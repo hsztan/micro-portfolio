@@ -294,6 +294,7 @@ nav ul .email-icon {
 
 #work-modal {
   /* display: none; */
+  overflow-y: scroll;
   position: fixed;
   z-index: 4;
   left: 0;
@@ -309,7 +310,75 @@ nav ul .email-icon {
   padding: 16px;
 }
 
+#work-modal title {
+  display: flex;
+}
+
+#work-modal h2 {
+  color: #172b4d;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#work-modal .tech-tags {
+  margin-top: 38px;
+  display: flex;
+}
+
+#work-modal .tech-tags a {
+  display: inline-block;
+  margin-top: 24px;
+  margin-right: 12px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+}
+
+#work-modal .modal-main {
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+#work-modal .modal-main img {
+  height: 220px;
+  width: auto;
+  object-fit: cover;
+}
+
+#work-modal .modal-main p {
+  padding-top: 24px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+#work-modal .modal-btns {
+  margin-top: 24px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#work-modal button span {
+  display: block;
+}
+
 #work-modal button {
+  width: 48%;
+  gap: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 12px;
   color: #fff;
   background-color: #f55800;
@@ -319,8 +388,12 @@ nav ul .email-icon {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  width: 100%;
   height: 58px;
+}
+
+#work-modal .modal-btns .icon {
+  height: 60%;
+  width: auto;
 }
 
 /* Styling for works section */
