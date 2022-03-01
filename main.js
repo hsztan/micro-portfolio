@@ -37,7 +37,9 @@ const cardsWrapper = document.querySelector('.cards-wrapper');
 
 // Featured Work
 let ulItems = '';
-works[0].technologies.forEach((tech) => { ulItems += `<li><a href="#">${tech}</a></li>`; });
+works[0].technologies.forEach((tech) => {
+  ulItems += `<li><a href="#">${tech}</a></li>`;
+});
 featuredWork.innerHTML = `
         <div class="title">
           <h2>My Recent Works</h2>
@@ -64,7 +66,9 @@ featuredWork.innerHTML = `
 // Works cards
 for (let i = 1; i < works.length; i += 1) {
   let ulItems = '';
-  works[i].technologies.forEach((tech) => { ulItems += `<li><a href="#">${tech}</a></li>`; });
+  works[i].technologies.forEach((tech) => {
+    ulItems += `<li><a href="#">${tech}</a></li>`;
+  });
   const cardDiv = document.createElement('div');
   cardDiv.innerHTML = `
   <div class="card card-${i}" data-work="${i}">
