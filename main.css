@@ -942,7 +942,7 @@ input:focus {
 /* Styling for works detail modal */
 
 #work-modal {
-  /* display: none; */
+  display: none;
   overflow-y: scroll;
   position: fixed;
   z-index: 4;

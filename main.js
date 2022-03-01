@@ -79,7 +79,7 @@ for (let i = 1; i < works.length; i += 1) {
         ${ulItems}
       </ul>
     </div>
-    <button id="work-btn" class="btn btn-main" type="button" data-work="${i}>See Project</button>
+    <button id="work-btn" class="btn btn-main" type="button" data-work="${i}">See Project</button>
   </div>
 `;
   cardsWrapper.appendChild(cardDiv);
@@ -117,7 +117,13 @@ for (let i = 1; i < works.length; i += 1) {
 
 const workButtons = document.querySelectorAll('#work-btn');
 
-const createModal = (i) => `
+const createModal = (i) => {
+  let techString = '';
+  works[i].technologies.forEach((tech) => {
+    techString += `<li><a href="">${tech}</a></li>`;
+  });
+
+  const modal = `
   <div class="modal-content">
           <div class="modal-title">
             <h2>${works[i].name}</h2>
@@ -128,11 +134,7 @@ const createModal = (i) => `
               />
             </div>
           </div>
-          <ul class="tech-tags">
-            <li><a href="">html</a></li>
-            <li><a href="">Bootstrap</a></li>
-            <li><a href="">Ruby on rails</a></li>
-          </ul>
+          <ul class="tech-tags">${techString}</ul>
           <div class="modal-main">
             <div class="modal-img">
               <img src="${works[i].featuredImage}" alt="work" />
@@ -169,12 +171,15 @@ const createModal = (i) => `
           </div>
         </div>
   `;
-  // return the modal
+  return modal;
+};
 
 const displayModal = (event) => {
+  const modalSection = document.querySelector('#work-modal');
   const index = event.target.dataset.work;
   const workModal = createModal(index);
-  // display the modal
+  modalSection.innerHTML = workModal;
+  modalSection.style.display = 'block';
 };
 
 workButtons.forEach((btn) => {
