@@ -1104,19 +1104,26 @@ input:focus {
     display: flex;
     padding-top: 24px;
     padding-bottom: 20px;
+    justify-content: space-between;
     width: 100%;
   }
 
   #work-modal .modal-main img {
-    /* height: 220px; */
-    width: auto;
+    width: 100%;
     display: block;
-    object-fit: cover;
+    height: auto;
+    object-fit: fill;
   }
 
-  #modal-main .modal-img {
+  .modal-main .modal-img {
     flex: 1;
     height: 100%;
+    width: auto;
+  }
+
+  .modal-info {
+    width: 42%;
+    padding-left: 25px;
   }
 
   #work-modal .modal-main p {
