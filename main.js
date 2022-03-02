@@ -194,3 +194,46 @@ const displayModal = (event) => {
 workButtons.forEach((btn) => {
   btn.addEventListener('click', displayModal);
 });
+
+// Validate email input in form
+
+const validateEmail = (inputElement) => {
+  const username = inputElement.value.split('@')[0];
+  const emailRegex = /^[a-z]+$/;
+  return emailRegex.test(username);
+};
+
+const showMessage = (message, element) => {
+  element.innerText = message;
+};
+
+// Disable hidden required fields in order to submit
+const toggleDisableFields = () => {
+  const firstName = document.querySelector('#first-name');
+  const lastName = document.querySelector('#last-name');
+  const fullName = document.querySelector('#name');
+  if (window.innerWidth <= 992) {
+    firstName.setAttribute('disabled', true);
+    lastName.setAttribute('disabled', true);
+    fullName.removeAttribute('disabled');
+  } else {
+    firstName.removeAttribute('disabled');
+    lastName.removeAttribute('disabled');
+    fullName.setAttribute('disabled', true);
+  }
+};
+
+// In order to disable the hidden fields
+window.addEventListener('resize', toggleDisableFields);
+window.addEventListener('load', toggleDisableFields);
+
+document.querySelector('.contact-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailInput = document.querySelector('#email');
+  const isValid = validateEmail(emailInput);
+  if (!isValid) {
+    const msgErrorOut = document.querySelector('#email').parentNode.querySelector('small');
+    showMessage('This is an error', msgErrorOut);
+    return false;
+  }
+});
