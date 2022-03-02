@@ -383,6 +383,7 @@ nav ul .email-icon {
 }
 
 .cards-wrapper {
+  overflow: hidden;
   margin: 0 auto;
   width: 1155px;
   padding-top: 24px;
@@ -569,7 +570,8 @@ nav ul .email-icon {
     margin-top: 24px;
     padding-bottom: 120px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 386px);
+    grid-template-columns: repeat(1, 386px);
+    grid-template-rows: auto;
     row-gap: 24px;
   }
 
