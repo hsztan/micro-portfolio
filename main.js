@@ -234,7 +234,7 @@ document.querySelector('.contact-form').addEventListener('submit', (e) => {
   const isValid = validateEmail(emailInput);
   if (!isValid) {
     e.preventDefault();
-    const msgErrorOutContainer = document.querySelector('#warnings')
+    const msgErrorOutContainer = document.querySelector('#warnings');
     showMessage('Please enter your email in lower-case letters.', msgErrorOutContainer, emailInput.value);
     return false;
   }
