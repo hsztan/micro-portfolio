@@ -236,4 +236,5 @@ document.querySelector('.contact-form').addEventListener('submit', (e) => {
     showMessage('This is an error', msgErrorOut);
     return false;
   }
+  return true;
 });
