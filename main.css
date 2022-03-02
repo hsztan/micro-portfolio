@@ -838,6 +838,13 @@ nav ul .email-icon {
   margin-top: 25px;
 }
 
+#warnings {
+  color: #ff6b00;
+  padding-top: 5px;
+  padding-left: 16px;
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+}
+
 .contact textarea {
   padding: 12px;
   margin-top: 24px;
