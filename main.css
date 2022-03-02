@@ -1013,6 +1013,14 @@ input:focus {
   color: #344563;
 }
 
+.modal-btns #btn-1 {
+  width: 134px;
+}
+
+.modal-btns #btn-2 {
+  width: 160px;
+}
+
 #work-modal .modal-btns {
   margin-top: 24px;
   height: 48px;
@@ -1025,8 +1033,9 @@ input:focus {
 }
 
 #work-modal .modal-links {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
