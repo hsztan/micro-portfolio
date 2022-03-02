@@ -998,8 +998,9 @@ input:focus {
 }
 
 #work-modal .modal-main img {
-  height: 220px;
-  width: auto;
+  /* height: 220px;
+  width: auto; */
+  max-width: 100%;
   object-fit: cover;
 }
 
