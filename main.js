@@ -199,7 +199,7 @@ workButtons.forEach((btn) => {
 
 const validateEmail = (inputElement) => {
   const username = inputElement.value.split('@')[0];
-  const emailRegex = /^[a-z]+$/;
+  const emailRegex = /^[a-z_.\-|1-9]+$/;
   return emailRegex.test(username);
 };
 
@@ -234,8 +234,8 @@ document.querySelector('.contact-form').addEventListener('submit', (e) => {
   const isValid = validateEmail(emailInput);
   if (!isValid) {
     e.preventDefault();
-    const msgErrorOut = document.querySelector('#email').parentNode.querySelector('small');
-    showMessage('Please enter your email in lower-case letters.', msgErrorOut, emailInput.value);
+    const msgErrorOutContainer = document.querySelector('#warnings')
+    showMessage('Please enter your email in lower-case letters.', msgErrorOutContainer, emailInput.value);
     return false;
   }
   return true;
