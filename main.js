@@ -203,7 +203,9 @@ const validateEmail = (inputElement) => {
   return emailRegex.test(username);
 };
 
-const showMessage = (message, element) => {
+const showMessage = (message, element, email) => {
+  const correctEmail = email.toLowerCase();
+  message += ` Did you mean this? ${correctEmail}`;
   element.innerText = message;
 };
 
@@ -233,7 +235,7 @@ document.querySelector('.contact-form').addEventListener('submit', (e) => {
   if (!isValid) {
     e.preventDefault();
     const msgErrorOut = document.querySelector('#email').parentNode.querySelector('small');
-    showMessage('Please enter your email in lower-case letters', msgErrorOut);
+    showMessage('Please enter your email in lower-case letters.', msgErrorOut, emailInput.value);
     return false;
   }
   return true;
