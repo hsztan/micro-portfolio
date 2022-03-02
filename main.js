@@ -228,12 +228,12 @@ window.addEventListener('resize', toggleDisableFields);
 window.addEventListener('load', toggleDisableFields);
 
 document.querySelector('.contact-form').addEventListener('submit', (e) => {
-  e.preventDefault();
   const emailInput = document.querySelector('#email');
   const isValid = validateEmail(emailInput);
   if (!isValid) {
+    e.preventDefault();
     const msgErrorOut = document.querySelector('#email').parentNode.querySelector('small');
-    showMessage('This is an error', msgErrorOut);
+    showMessage('Please enter your email in lower-case letters', msgErrorOut);
     return false;
   }
   return true;
