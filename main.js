@@ -199,7 +199,7 @@ workButtons.forEach((btn) => {
 
 const validateEmail = (inputElement) => {
   const username = inputElement.value.split('@')[1];
-  const emailRegex = /^[a-z_.\-|1-9]+$/;
+  const emailRegex = /^[a-z\-|1-9]+$/;
   return emailRegex.test(username);
 };
 
