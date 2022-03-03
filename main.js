@@ -221,7 +221,7 @@ const toggleDisableFields = () => {
   } else {
     firstName.removeAttribute('disabled');
     lastName.removeAttribute('disabled');
-    fullName.setAttribute('disabled', false);
+    fullName.setAttribute('disabled', true);
   }
 };
 
