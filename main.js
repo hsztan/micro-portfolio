@@ -198,7 +198,7 @@ workButtons.forEach((btn) => {
 // Validate email input in form
 
 const validateEmail = (inputElement) => {
-  const username = inputElement.value.split('@')[0];
+  const username = inputElement.value.split('@')[1];
   const emailRegex = /^[a-z_.\-|1-9]+$/;
   return emailRegex.test(username);
 };
@@ -221,7 +221,7 @@ const toggleDisableFields = () => {
   } else {
     firstName.removeAttribute('disabled');
     lastName.removeAttribute('disabled');
-    fullName.setAttribute('disabled', true);
+    fullName.setAttribute('disabled', false);
   }
 };
 
