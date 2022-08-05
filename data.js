@@ -18,13 +18,13 @@ const works = [
     urlRepo: 'https://github.com/hsztan/the-conference',
   },
   {
-    name: 'Data Dashboard Healthcare',
+    name: 'Paymintz',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: './assets/images/modal-work-thumbnail.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    urlLive: '',
-    urlRepo: '',
+      "An App made with Rails that takes care of your expenses. You can have a record of your expenses by date, category, amount, and others. Has unit and implementation tests with RSpec and Capybara. Implements authentication with Devise and authorization with CanCanCan",
+    featuredImage: './assets/images/spendify.png',
+    technologies: ['Rails', 'Ruby', 'Heroku', 'Devise', 'SCSS'],
+    urlLive: 'https://peaceful-stream-92923.herokuapp.com/',
+    urlRepo: 'https://github.com/hsztan/Paymintz',
   },
   {
     name: 'Website Portfolio',
