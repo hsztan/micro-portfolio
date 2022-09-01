@@ -20,20 +20,20 @@ const works = [
   {
     name: 'Paymintz',
     description:
-      "An App made with Rails that takes care of your expenses. You can have a record of your expenses by date, category, amount, and others. Has unit and implementation tests with RSpec and Capybara. Implements authentication with Devise and authorization with CanCanCan",
+      'An App made with Rails that takes care of your expenses. You can have a record of your expenses by date, category, amount, and others. Has unit and implementation tests with RSpec and Capybara. Implements authentication with Devise and authorization with CanCanCan',
     featuredImage: './assets/images/spendify.png',
-    technologies: ['Rails', 'Ruby', 'Heroku', 'Devise', 'SCSS'],
+    technologies: ['Rails', 'Ruby', 'Heroku', 'Devise'],
     urlLive: 'https://peaceful-stream-92923.herokuapp.com/',
     urlRepo: 'https://github.com/hsztan/Paymintz',
   },
   {
-    name: 'Website Portfolio',
+    name: 'Bee Bookings',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: './assets/images/modal-work-thumbnail.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    urlLive: '',
-    urlRepo: '',
+      'An interactive SPA that allows a user to interact with our backend API. In this site, the user can view, add, delete, and reserve bees. Our app allows a user to add a photo of their choosing.',
+    featuredImage: './assets/images/bee-bookings-project.png',
+    technologies: ['Rails API', 'React', 'Redux', 'ASW S3'],
+    urlLive: 'https://beebookcapstone.netlify.app/',
+    urlRepo: 'https://github.com/jsug9/bee-bookings-front-end',
   },
   {
     name: 'Professional Art Printing Data More',
