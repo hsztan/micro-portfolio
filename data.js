@@ -29,7 +29,7 @@ const works = [
   {
     name: 'Bee Bookings',
     description:
-      'An interactive SPA that allows a user to interact with our backend API. In this site, the user can view, add, delete, and reserve bees. Our app allows a user to add a photo of their choosing.',
+      'An interactive SPA that allows a user to interact with our Rails backend API. In this site, the user can view, add, delete, and reserve bees. Our app allows a user to add a photo of their choosing and upload it to our AWS S3 bucket.',
     featuredImage: './assets/images/bee-bookings-project.png',
     technologies: ['Rails', 'React', 'Redux', 'AWS'],
     urlLive: 'https://beebookcapstone.netlify.app/',
