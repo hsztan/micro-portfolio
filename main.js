@@ -66,7 +66,7 @@ featuredWork.innerHTML = `
 // Works cards
 for (let i = 1; i < works.length; i += 1) {
   let ulItems = '';
-  works[i].technologies.forEach((tech) => {
+  works[i].technologies.slice(0, 3).forEach((tech) => {
     ulItems += `<li><a href="#">${tech}</a></li>`;
   });
   const cardDiv = document.createElement('div');
@@ -235,7 +235,11 @@ document.querySelector('.contact-form').addEventListener('submit', (e) => {
   if (!isValid) {
     e.preventDefault();
     const msgErrorOutContainer = document.querySelector('#warnings');
-    showMessage('Please enter your email in lower-case letters.', msgErrorOutContainer, emailInput.value);
+    showMessage(
+      'Please enter your email in lower-case letters.',
+      msgErrorOutContainer,
+      emailInput.value,
+    );
     return false;
   }
   return true;
