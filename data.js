@@ -13,7 +13,7 @@ const works = [
     description:
       'A Conference Website made with Vanilla Javascript, HTML and CSS',
     featuredImage: './assets/images/fiacs-project.png',
-    technologies: ['html', 'css', 'Javacsipt'],
+    technologies: ['HTML', 'CSS', 'Javascript'],
     urlLive: 'https://hsztan.github.io/the-conference/',
     urlRepo: 'https://github.com/hsztan/the-conference',
   },
@@ -31,7 +31,7 @@ const works = [
     description:
       'An interactive SPA that allows a user to interact with our backend API. In this site, the user can view, add, delete, and reserve bees. Our app allows a user to add a photo of their choosing.',
     featuredImage: './assets/images/bee-bookings-project.png',
-    technologies: ['Rails API', 'React', 'Redux', 'ASW S3'],
+    technologies: ['Rails', 'React', 'Redux', 'AWS'],
     urlLive: 'https://beebookcapstone.netlify.app/',
     urlRepo: 'https://github.com/jsug9/bee-bookings-front-end',
   },
