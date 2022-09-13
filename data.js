@@ -36,21 +36,21 @@ const works = [
     urlRepo: 'https://github.com/jsug9/bee-bookings-front-end',
   },
   {
-    name: 'Professional Art Printing Data More',
+    name: 'Gepesat Mobile',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: './assets/images/modal-work-thumbnail.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    urlLive: '',
+      "A mobile GPS tracking app that allows users to track their vehicles' location. It also allows users to set up geofences and receive notifications when their vehicles enter or exit the geofence. It also allows users to set up geofences and receive notifications when their vehicles enter or exit the geofence.",
+    featuredImage: './assets/images/gepesat-mobile.jpeg',
+    technologies: ['React', 'RoR', 'JS', 'HTML'],
+    urlLive: 'https://lmovil.gepesat.com/',
     urlRepo: '',
   },
   {
-    name: 'Data Dashboard Healthcare',
+    name: 'Gepesat Desktop',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: './assets/images/modal-work-thumbnail.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    urlLive: '',
+      "A desktop GPS platform that allows users to track their vehicles' location. It also has reports and analytics that allow users to see their vehicles' performance.",
+    featuredImage: './assets/images/gepesat-desktop.png',
+    technologies: ['html', 'php', 'NodeJS', 'JS'],
+    urlLive: 'http://gepesat.com/',
     urlRepo: '',
   },
   {
